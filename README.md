@@ -206,7 +206,7 @@ MariaDB [hotel]> SELECT pelanggan.nama_pelanggan, reservasi.id_reservasi
     ->      FROM pelanggan
     
     ->      LEFT JOIN reservasi ON pelanggan.id_pelanggan = reservasi.id_pelanggan;
-    
+    ```
 +----------------+--------------+
 
 | nama_pelanggan | id_reservasi |
@@ -218,6 +218,7 @@ MariaDB [hotel]> SELECT pelanggan.nama_pelanggan, reservasi.id_reservasi
 | kakaw          |         NULL |
 +----------------+--------------+
 4 rows in set (0.002 sec)
+```
 MariaDB [hotel]> SELECT kamar.nomor_kamar, reservasi.id_reservasi
     ->     FROM reservasi
     ->      RIGHT JOIN kamar ON reservasi.id_kamar = kamar.id_kamar;
